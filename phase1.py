@@ -3,7 +3,7 @@ import requests
 import csv
 
 #This function deals with the rating category which is written as a word; integer more useful
-def convertWordToNum(num):
+def convert_word_to_num(num):
     numberList = {
         'One':1,
         'Two':2,
@@ -61,7 +61,7 @@ product_description = soup.find('div',id='product_description').find_next_siblin
 #category is third link that appears on the page
 category = soup.find_all('a')[3].string
 # Extracting the rating: it is located in the class name of the <p> tag containing the stars
-star_rating = convertWordToNum(soup.find('p',{'class':'star-rating'}).attrs.get('class')[1])
+star_rating = convert_word_to_num(soup.find('p',{'class':'star-rating'}).attrs.get('class')[1])
 # image url includes a relative link so I've replaced the first directories with the full address just in case
 image_url = soup.find('img').attrs.get('src')[5:]
 base_url = 'https://books.toscrape.com'
