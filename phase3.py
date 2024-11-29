@@ -41,7 +41,7 @@ def create_csv(file_name):
     csv_file_path = os.path.join(new_path, csv_file)
 
     # Open the file in write mode
-    with open(csv_file_path, mode='w', newline='') as file:
+    with open(csv_file_path, mode='w', newline='', encoding="utf-8") as file:
         # Create a csv.writer object
         writer = csv.writer(file)
         # Write data to the CSV file
