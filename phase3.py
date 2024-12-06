@@ -63,8 +63,6 @@ if __name__ == '__main__':
             book_rows.append(book_row)
         
         create_csv(category_dir, name, book_rows)
-        
-        break
     
 
     
