@@ -1,24 +1,40 @@
 # Comment utiliser les scripts pour extraire des données et des images
-
 ## phase1.py
-Ce script vous permet de creer un seul fichier csv qui contient les données d'un seul livre.
-Il faut preciser le URL d'un livre dans la variable 'url'
-Quand vous executez le code, un fichier csv au nom de example.csv sera crée dans le dossier du projet.
+Ce script permet de créer un fichier CSV contenant les données d'un seul livre.
 
-## phase2.p2
-Pour faire marcher ce script, il faut passer le URL d'une categorie de livres du site-web à la fonctionne get_books_from_category.
-Cette fonction sera initialise dans la variable get_urls.
-Quand vous executez le code, comme dans phase1.py, un fichier csv au nom de example.csv sera crée dans le dossier du projet.
-La difference c'est que cette fois ce csv contiendra les données de tous les livres de la categorie selectionée.
+Configuration :
+Spécifiez l'URL du livre dans la variable url.
+Exécution :
+Lorsque vous exécutez le script, un fichier CSV nommé example.csv sera généré dans le répertoire du projet.
+
+## phase2.py
+Ce script permet d'extraire les données de tous les livres d'une catégorie.
+
+Configuration :
+Fournissez l'URL d'une catégorie de livres à la fonction get_books_from_category.
+Cette fonction initialise la variable get_urls.
+Exécution :
+Comme pour phase1.py, un fichier CSV nommé example.csv sera créé dans le répertoire du projet.
+Cette fois, le CSV contiendra les données de tous les livres appartenant à la catégorie spécifiée.
+
 
 ## phase3.py
-Avec ce script, il faut preciser le URL du homepage du site dans la variable list_of_cats, qui appelle la fonction get_category_url_and_name.
-Quand vous executez le code, le script va créer un fichier pour chaque categorie, dans lequel se trouvera un fichier csv. 
-Ce ficher contiendra les données de tous les livres d'une seule categorie.
-Notez que il y aura un dossier "images" dans chaque dossier de categorie, mais ça reste vide pour l'instant.
+Ce script permet d'extraire les données de toutes les catégories de livres disponibles sur le site.
+
+Configuration :
+Spécifiez l'URL de la page d'accueil du site dans la variable list_of_cats, utilisée par la fonction get_category_url_and_name.
+Exécution :
+Le script génère un dossier pour chaque catégorie.
+Chaque dossier contient un fichier CSV regroupant les données de tous les livres de cette catégorie.
+Un sous-dossier images est également créé dans chaque dossier de catégorie, mais il restera vide à cette étape.
+
 
 ## phase4.py
-Ce script fonctionne dans la meme maniere que le precedent.
-La seule difference c'est que cette fois les images vont etre telecharger et stocker dans le dossier "images" de chaque categorie.
-Les fichiers images sont nommées avec le "universal product code." 
-Ca veut dire que vous pouvez facilement matcher les images avec les données dans les csv en utiliant le upc comme terme de recherche.
+Ce script fonctionne de manière similaire à phase3.py, avec une fonctionnalité supplémentaire : le téléchargement des images des livres.
+
+Configuration et exécution :
+Les dossiers et fichiers CSV sont générés comme dans phase3.py.
+Les images des livres sont téléchargées dans le dossier images de chaque catégorie.
+Les fichiers images sont nommés à l'aide du Universal Product Code (UPC).
+Astuce :
+Vous pouvez facilement associer les images aux données des fichiers CSV en recherchant le UPC correspondant.
