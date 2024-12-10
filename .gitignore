@@ -1,6 +1,3 @@
 venv
 __pycache__/
-historical fiction
-mystery
-travel
-example.csv
+.DS_Store
