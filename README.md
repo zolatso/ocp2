@@ -1,4 +1,38 @@
 # Comment utiliser les scripts pour extraire des données et des images
+
+## Installez l'environnement virtuel
+Voici une version améliorée et plus fluide de votre texte :
+
+---
+
+## Installation de l'environnement virtuel
+
+Pour créer un environnement virtuel, utilisez le module Python `venv`. Une fois le dépôt Git cloné sur votre machine locale, ouvrez un terminal pour procéder à la création de l'environnement.
+
+Dans le répertoire contenant le projet, exécutez la commande suivante :
+```bash
+python -m venv env
+```
+
+### Activation de l'environnement virtuel :
+- **Mac/Linux** : 
+  ```bash
+  source env/bin/activate
+  ```
+- **Windows** :
+  ```bash
+  .\env\Scripts\activate
+  ```
+
+Une fois l'environnement activé, installez les dépendances du projet en exécutant la commande suivante :
+```bash
+pip install -r requirements.txt
+```
+
+Cela téléchargera et installera tous les modules spécifiés dans le fichier `requirements.txt`.
+
+**Remarque :** Si vous utilisez Visual Studio Code, ce processus peut être encore plus simple. L'éditeur vous proposera automatiquement de créer un environnement virtuel et d’installer les modules listés dans `requirements.txt`.
+
 ## phase1.py
 Ce script permet de créer un fichier CSV contenant les données d'un seul livre.
 
