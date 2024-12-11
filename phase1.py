@@ -33,7 +33,10 @@ def scrape_book(url):
     #For the number_available we cut off everything apart from the number
     number_available = table_content[5].string[10:].split()[0]
     # there's no identifying marks on the <p> containing the product description so we have to find it from the heading next to it
-    product_description = soup.find('div',id='product_description').find_next_sibling().string
+    if soup.find('div',id='product_description'):
+        product_description = soup.find('div',id='product_description').find_next_sibling().string
+    else:
+        product_description = ''
     # category is third link that appears on the page
     category = soup.find_all('a')[3].string
     # Extracting the rating: it is located in the class name of the <p> tag containing the stars

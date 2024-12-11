@@ -1,15 +1,10 @@
 # Comment utiliser les scripts pour extraire des données et des images
 
-## Installez l'environnement virtuel
-Voici une version améliorée et plus fluide de votre texte :
-
----
-
 ## Installation de l'environnement virtuel
 
 Pour créer un environnement virtuel, utilisez le module Python `venv`. Une fois le dépôt Git cloné sur votre machine locale, ouvrez un terminal pour procéder à la création de l'environnement.
 
-Dans le répertoire contenant le projet, exécutez la commande suivante :
+Dans le répertoire contenant le projet, exécutez la commande suivante (cest possible qui vous devez utilisez python3 s'il y a aussi une version de Python 2 installé sur votre machine):
 ```bash
 python -m venv env
 ```

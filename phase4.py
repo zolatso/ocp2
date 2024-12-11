@@ -32,5 +32,3 @@ if __name__ == '__main__':
             download_image(category_dir, book_row[9], book_row[1])
         
         create_csv(category_dir, name, book_rows)
-
-    

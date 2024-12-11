@@ -10,8 +10,9 @@ def create_dir(name):
     # function that creates folder for each category and places another folder inside for its images
     # returns the path to the folder
     current_folder = os.getcwd()
-    new_folder = name
-    new_path = os.path.join(current_folder, new_folder)
+    new_folder = 'data'
+    cat_folder = name
+    new_path = os.path.join(current_folder, cat_folder)
     images = 'images'
     image_path = os.path.join(new_path, images)
     if not os.path.isdir(new_path):
@@ -63,8 +64,6 @@ if __name__ == '__main__':
             book_rows.append(book_row)
         
         create_csv(category_dir, name, book_rows)
-    
-
     
         
     
