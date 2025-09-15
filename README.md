@@ -1,5 +1,11 @@
 # Comment utiliser les scripts pour extraire des données et des images
 
+## Overview 
+
+Un projet d’apprentissage Python centré sur l’automatisation de la collecte de données. Vous mettrez en place un environnement de développement, manipulerez les bases de Python, utiliserez Git/GitHub et construirez une pipeline ETL complète pour extraire, transformer et charger des données issues d’un site de vente de livres en ligne vers un fichier CSV. Le projet inclut également l’extraction et la sauvegarde des images produits ainsi que la rédaction d’un rapport décrivant la solution.
+
+A Python learning project focused on automated data collection. You will set up a development environment, practice Python fundamentals, use Git/GitHub, and build a complete ETL pipeline to extract, transform, and load data from an online book retailer into a CSV file. The project also includes extracting and saving product images and writing a report explaining the solution.
+
 ## Installation de l'environnement virtuel
 
 Pour créer un environnement virtuel, utilisez le module Python `venv`. Une fois le dépôt Git cloné sur votre machine locale, ouvrez un terminal pour procéder à la création de l'environnement.
